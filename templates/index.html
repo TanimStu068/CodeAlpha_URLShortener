@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shorten a link</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <h1>Shorten a link</h1>
+    <p class="lead">Paste a long URL and get a short one that redirects to it.</p>
+
+    <form id="form" novalidate>
+      <label for="url" class="sr">Long URL</label>
+      <input id="url" type="text" placeholder="https://example.com/a/very/long/path"
+             autocomplete="off" required>
+      <button type="submit">Shorten link</button>
+    </form>
+
+    <p id="error" role="alert" hidden></p>
+
+    <section id="result" hidden>
+      <p class="muted">Your short link</p>
+      <div class="row">
+        <a id="short" href="#" target="_blank" rel="noopener"></a>
+        <button id="copy" type="button">Copy link</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Recent links</h2>
+      <ul id="recent"><li class="muted">No links yet. Shorten one above.</li></ul>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
