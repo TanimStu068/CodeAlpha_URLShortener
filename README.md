@@ -1,5 +1,3 @@
-# CodeAlpha_URLShortener
-
 A simple URL shortener built with **Flask** and **SQLite** for the CodeAlpha
 Backend Development Internship (Task 1).
 
