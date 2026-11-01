@@ -11,7 +11,7 @@ Backend Development Internship (Task 1).
 
 ## Project structure
 ```
-CodeAlpha_URLShortener/
+URLShortener/
 ├── app.py            # Flask app: routes + API
 ├── config.py         # Settings
 ├── database.py       # SQLite connection + schema
